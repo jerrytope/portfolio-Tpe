@@ -26,14 +26,14 @@ const Projects = () => {
         "School Inventory Management: Assists in tracking and managing school resources and financial transactions.",
         "E-Library: Provides access to a vast collection of electronic books and educational materials, fostering a love for learning.",
         "Auto Timetable Generation: Simplifies the creation of class schedules with an intuitive timetable generator",
-        "Results to SMS: Allows schools to send students' results directly to parents via SMS, ensuring timely communication."
+        "Results to SMS: Allows schools to send students' results directly to parents via SMS, ensuring timely communication"
       ],
       link: "https://platformeduportal.com/",
       tags: ["Education", "SaaS", "Management"]
     },
     {
       title: "LagosLiga Analysis Platform",
-      description: "The LagosLiga Analysis Platform, hosted at lagosliga.madeinafricasport.com, is a dedicated analytics site for the Lagos Liga competition. It offers comprehensive analysis of all games, utilizing 48 distinct data points to provide real-time insights and visualizations. This platform enhances the experience for fans, coaches, and analysts by delivering in-depth statistical breakdowns and dynamic visual representations of match events.",
+      description: "The LagosLiga Analysis Platform, hosted at lagosliga.madeinafricasport.com, is a dedicated analytics site for the Lagos Liga competition. It offers comprehensive analysis of all games, utilizing 48 distinct data points to provide real-time insights and visualizations. This platform enhances the experience for fans, coaches, and analysts by delivering in-depth statistical breakdowns and dynamic visual representations of match events. The Lagos Liga is a 7-a-side football tournament that commenced on December 6, 2024, at Campos Stadium, featuring 16 teams. The inaugural tournament concluded with Primal Sporting FC clinching the N50 million grand prize after a dramatic final against Applebee FC at the Mobolaji Johnson Arena. The match ended 1-1 after extra time, with Primal Sporting FC securing victory through a 9-8 penalty shootout. The LagosLiga Analysis Platform plays a crucial role in documenting and analyzing such thrilling matches, offering stakeholders valuable data-driven insights into team performances and match dynamics.",
       features: [
         "Real-time match insights",
         "Dynamic visual representations",
@@ -46,7 +46,7 @@ const Projects = () => {
     },
     {
       title: "QuidX AI",
-      description: "QuidX AI is an innovative platform that leverages artificial intelligence to enhance decision-making for traders, with a particular focus on forex and cryptocurrency markets. By integrating advanced AI technologies, QuidX AI aims to provide traders with data-driven insights, real-time analysis, and automated strategies to navigate the complexities of these financial markets effectively.",
+      description: "QuidX AI is an innovative platform that leverages artificial intelligence to enhance decision-making for traders, with a particular focus on forex and cryptocurrency markets. By integrating advanced AI technologies, QuidX AI aims to provide traders with data-driven insights, real-time analysis, and automated strategies to navigate the complexities of these financial markets effectively. While specific details about QuidX AI's services are limited due to website access restrictions, similar platforms in the industry offer a range of AI-powered tools designed to optimize trading  rmance:",
       features: [
         "Data-driven insights",
         "Real-time market analysis",
@@ -59,7 +59,7 @@ const Projects = () => {
     },
     {
       title: "EDC Anambra",
-      description: "The Examinations Development Centre (EDC) of Anambra State is a pivotal department within the state's Ministry of Education, responsible for the design, development, and implementation of assessment and examination systems for students across various educational levels. The EDC ensures fair, accurate, and standardized evaluations of student learning outcomes, contributing significantly to the quality of education in the state",
+      description: "The Examinations Development Centre (EDC) of Anambra State is a pivotal department within the state's Ministry of Education, responsible for the design, development, and implementation of assessment and examination systems for students across various educational levels. The EDC ensures fair, accurate, and standardized evaluations of student learning outcomes, contributing significantly to the quality of education in the state.",
       features: [
         "Online examination registration",
         "Result checking portal",
@@ -82,12 +82,11 @@ const Projects = () => {
     },
     {
       title: "EDC Abia State",
-      description: "The Examinations Development Centre (EDC) of Anambra State is a pivotal department within the state's Ministry of Education, responsible for the design, development, and implementation of assessment and examination systems for students across various educational levels. The EDC ensures fair, accurate, and standardized evaluations of student learning outcomes, contributing significantly to the quality of education in the state",
+      description: "The Examinations Development Commission (EDC) of Abia State, the EDC is responsible for designing, developing, and implementing assessment and examination systems for students across various educational levels. Its primary objective is to ensure fair, accurate, and standardized evaluations of student learning outcomes, thereby contributing significantly to the quality of education in the state. In a significant technological advancement, the EDC has established an online platform that facilitates seamless registration and result checking for various examinations. This initiative aims to streamline examination processes and enhance accessibility for candidates and educational institutions.",
       features: [
         "Examination registration",
         "Result verification",
         "Certificate management",
-        "Payment processing",
         "Administrative tools"
       ],
       link: "https://edcabiastate.com/",
@@ -97,9 +96,14 @@ const Projects = () => {
       title: "Made In Africa Sport",
       description: "Made In Africa Sport is a dynamic platform dedicated to delivering comprehensive coverage of African sports through data analytics, infographics, insightful match reports, and up-to-date news. The platform aims to highlight the rich tapestry of African sports, offering in-depth analysis and engaging content to its audience.",
       features: [
-        "Data-Driven Insights: Utilizing advanced data analytics for detailed statistical breakdowns",
-        "Comprehensive Coverage: Coverage of various sports including football, tennis, athletics",
-        "Engaging Content: Match previews, reviews, and feature articles",
+        "Data-Driven Insights: Utilizing advanced data analytics, Made In Africa Sport provides detailed statistical breakdowns and visualizations, enhancing the understanding of various sports events across the continent.",
+        "Comprehensive Coverage: The platform covers a wide array of sports, including football, tennis, athletics, table tennis, and Paralympics, ensuring that diverse athletic disciplines receive attention.",
+        "Engaging Content: Readers can access match previews, reviews, and feature articles that delve into the narratives shaping African sports, offering both informative and captivating content.",
+      ],
+      highlights: [
+        "CAF Awards 2024: An analysis discussing why Ademola Lookman is considered Africa’s premier footballer in 2024.",
+        "Lagos Liga Updates: Coverage of the Lagos Liga tournament, including Applebee FC's decisive 3-0 victory over Krypton FC, showcasing the platform's commitment to grassroots football.",
+        "National Sports Festival Preparations: Reports on the Ogun State Cricket Association unveiling its teams and upgraded facilities ahead of the 2024 National Sports Festival, reflecting the platform's dedication to a broad spectrum of sports.",
       ],
       link: "https://madeinafricasport.com/",
       tags: ["Sports", "Media", "Analytics"]
