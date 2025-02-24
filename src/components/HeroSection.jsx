@@ -17,7 +17,6 @@ function HeroSection() {
           <source src="/code.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className='flex justify-between'>
       <div className="container mx-auto px-6 relative h-full flex flex-1 items-center">
         <div className="max-w-3xl">
           <h1 className="text-5xl font-bold mb-4 animate-fade-in">
@@ -74,8 +73,6 @@ function HeroSection() {
         </div> */}
       </div>
       </div>
-      
-    </div>
   );
 }
 
