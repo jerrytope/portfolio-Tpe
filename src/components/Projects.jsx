@@ -107,6 +107,21 @@ const Projects = () => {
       ],
       link: "https://madeinafricasport.com/",
       tags: ["Sports", "Media", "Analytics"]
+    },
+    {
+      title: "Golf Handicap & Competition Management System",
+      description: "Enugu Golf Club Developed a web-based application for Enugu Golf Club to automate handicap calculation and manage golf competitions. Built using Django, the system tracks players' scores, computes accurate handicaps based on standardized rules, and ranks participants during tournaments. The platform supports secure user authentication, score submissions, and real-time leaderboard updates, enhancing the efficiency and transparency of golf events in Enugu State.",
+      features: [
+        "User Authentication & Role Management-  Secure login for players, admins, and organizers.",
+        "Role-based access to manage data and competitions.",
+        "Handicap Calculation Engine- Automatically calculates player handicaps based on submitted scores.  Follows standard golf handicap rules for fair ranking.",
+        "Score Submission- Players can submit their scores after each round.  Admins can verify and approve submitted results.",
+        "Competition Management- Organizers can create, manage, and schedule tournaments.",
+        "Live Leaderboards- Real-time leaderboard updates during active competitions.",
+      ],
+      
+      link: "https://madeinafricasport.com/",
+      tags: ["Sports", "Media", "Analytics"]
     }
   ];
 
