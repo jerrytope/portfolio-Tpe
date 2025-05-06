@@ -118,6 +118,11 @@ const Projects = () => {
         "Score Submission- Players can submit their scores after each round.  Admins can verify and approve submitted results.",
         "Competition Management- Organizers can create, manage, and schedule tournaments.",
         "Live Leaderboards- Real-time leaderboard updates during active competitions.",
+        "Competition Management-  Organizers can create, manage, and schedule tournaments.",
+        "Auto-ranking of players during competitions based on performance and handicap.",
+        "Player Profile & History-  Track player progress, past scores, and handicap history.",
+        "Admin Dashboard-  Overview of player stats, upcoming events, and score validations.",
+        "Responsive Design-     Mobile-friendly interface for players and organizers on the go.",
       ],
       
       link: "https://madeinafricasport.com/",
