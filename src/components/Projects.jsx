@@ -125,7 +125,7 @@ const Projects = () => {
         "Responsive Design-     Mobile-friendly interface for players and organizers on the go.",
       ],
       
-      link: "https://madeinafricasport.com/",
+      link: "https://enugugolf.com.ng/login/",
       tags: ["Sports", "Media", "Analytics"]
     }
   ];
