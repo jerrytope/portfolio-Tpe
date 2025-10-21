@@ -25,7 +25,7 @@ function HeroSection() {
             Ayoade Temitope
           </h1>
           <p className="text-2xl text-gray-300 mb-8">
-            Python Developer
+            Software Developer
           </p>
 
           <div className="flex space-x-4">

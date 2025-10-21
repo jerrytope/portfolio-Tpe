@@ -62,12 +62,12 @@ function SkillSet() {
           <div className="bg-white p-6 rounded-lg border-transparent shadow-xl">
             <h3 className="font-semibold mb-4 flex items-center">
               <DatabaseZap  className="w-5 h-5 mr-2 text-indigo-600" />
-              Data Analysis
+              Frontend Development
             </h3>
             <ul className="space-y-2">
-              <SkillBar name="Pandas" percentage={100} />
-              <SkillBar name="NumPy" percentage={100} />
-              <SkillBar name="Matplotlib" percentage={100} />
+              <SkillBar name="React" percentage={100} />
+              <SkillBar name="Next JS" percentage={100} />
+              <SkillBar name="Javascript" percentage={100} />
             </ul>
           </div>
 

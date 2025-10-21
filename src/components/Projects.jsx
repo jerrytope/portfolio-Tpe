@@ -17,34 +17,6 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Platform EduPortal",
-      description: "Platform EduPortal is a comprehensive SaaS school management solution designed to streamline administrative tasks and enhance the educational experience for students, teachers, and administrators. It offers a range of features tailored to meet the diverse needs of educational institutions.",
-      features: [
-        "School Website: Provides schools with a customizable website to establish an online presence",
-        "School Management Portal: Facilitates efficient management of student records, attendance, and academic performance.",
-        "Computer-Based Testing (CBT): Enables the creation and administration of online quizzes and exams, promoting interactive assessments.",
-        "School Inventory Management: Assists in tracking and managing school resources and financial transactions.",
-        "E-Library: Provides access to a vast collection of electronic books and educational materials, fostering a love for learning.",
-        "Auto Timetable Generation: Simplifies the creation of class schedules with an intuitive timetable generator",
-        "Results to SMS: Allows schools to send students' results directly to parents via SMS, ensuring timely communication"
-      ],
-      link: "https://platformeduportal.com/",
-      tags: ["Education", "SaaS", "Management"]
-    },
-    {
-      title: "LagosLiga Analysis Platform",
-      description: "The LagosLiga Analysis Platform, hosted at lagosliga.madeinafricasport.com, is a dedicated analytics site for the Lagos Liga competition. It offers comprehensive analysis of all games, utilizing 48 distinct data points to provide real-time insights and visualizations. This platform enhances the experience for fans, coaches, and analysts by delivering in-depth statistical breakdowns and dynamic visual representations of match events. The Lagos Liga is a 7-a-side football tournament that commenced on December 6, 2024, at Campos Stadium, featuring 16 teams. The inaugural tournament concluded with Primal Sporting FC clinching the N50 million grand prize after a dramatic final against Applebee FC at the Mobolaji Johnson Arena. The match ended 1-1 after extra time, with Primal Sporting FC securing victory through a 9-8 penalty shootout. The LagosLiga Analysis Platform plays a crucial role in documenting and analyzing such thrilling matches, offering stakeholders valuable data-driven insights into team performances and match dynamics.",
-      features: [
-        "Real-time match insights",
-        "Dynamic visual representations",
-        "Comprehensive statistical breakdowns",
-        "In-depth performance analysis",
-        "Team and player statistics"
-      ],
-      link: "https://lagosliga.madeinafricasport.com/",
-      tags: ["Sports", "Analytics", "Football"]
-    },
-    {
       title: "QuidX AI",
       description: "QuidX AI is an innovative platform that leverages artificial intelligence to enhance decision-making for traders, with a particular focus on forex and cryptocurrency markets. By integrating advanced AI technologies, QuidX AI aims to provide traders with data-driven insights, real-time analysis, and automated strategies to navigate the complexities of these financial markets effectively. While specific details about QuidX AI's services are limited due to website access restrictions, similar platforms in the industry offer a range of AI-powered tools designed to optimize trading  rmance:",
       features: [
@@ -57,41 +29,7 @@ const Projects = () => {
       link: "https://quidxai.com/",
       tags: ["AI", "Trading", "Fintech"]
     },
-    {
-      title: "EDC Anambra",
-      description: "The Examinations Development Centre (EDC) of Anambra State is a pivotal department within the state's Ministry of Education, responsible for the design, development, and implementation of assessment and examination systems for students across various educational levels. The EDC ensures fair, accurate, and standardized evaluations of student learning outcomes, contributing significantly to the quality of education in the state.",
-      features: [
-        "Online examination registration",
-        "Result checking portal",
-        "Assessment management",
-        "Student records database",
-        "Administrative dashboard"
-      ],
-      link: "https://edcanambra.com/",
-      tags: ["Education", "Government", "Assessment"]
-    },
-    {
-      title: "Abia School Management Portal",
-      description: "An online platform for managing school activities. Features include:",
-      features: [
-        "Result checking portal",
-        "Administrative dashboard"
-      ],
-      link: "https://abiaunifyportal.com.ng/",
-      tags: ["Education", "Government", "Assessment"]
-    },
-    {
-      title: "EDC Abia State",
-      description: "The Examinations Development Commission (EDC) of Abia State, the EDC is responsible for designing, developing, and implementing assessment and examination systems for students across various educational levels. Its primary objective is to ensure fair, accurate, and standardized evaluations of student learning outcomes, thereby contributing significantly to the quality of education in the state. In a significant technological advancement, the EDC has established an online platform that facilitates seamless registration and result checking for various examinations. This initiative aims to streamline examination processes and enhance accessibility for candidates and educational institutions.",
-      features: [
-        "Examination registration",
-        "Result verification",
-        "Certificate management",
-        "Administrative tools"
-      ],
-      link: "https://edcabiastate.com/",
-      tags: ["Education", "Government", "Assessment"]
-    },
+   
     {
       title: "Made In Africa Sport",
       description: "Made In Africa Sport is a dynamic platform dedicated to delivering comprehensive coverage of African sports through data analytics, infographics, insightful match reports, and up-to-date news. The platform aims to highlight the rich tapestry of African sports, offering in-depth analysis and engaging content to its audience.",
@@ -127,7 +65,105 @@ const Projects = () => {
       
       link: "https://enugugolf.com.ng/login/",
       tags: ["Sports", "Media", "Analytics"]
-    }
+    },
+      {
+      title: "Testify",
+      description: "Testify.ng is a SaaS platform for multiple states, designed to generate QR-coded,state-approved graduate testimonials that enable secure, instant verification. Through a dedicated student portal, learners can conveniently access and download their official testimonials anytime, ensuring 24/7 availability. With its streamlined process, the platform ensures authenticated documents are delivered within 24–48 hours after verification, combining speed, reliability, and scalability for schools across different state",
+      features: [
+        "User Authentication & Role Management.",
+        "Schools upload student records (e.g., First School Leaving Certificate exam results) which the system uses to generate the testimonial",
+        "Students can log in to access, verify, and download their official testimonial at any time.",
+        "It provides secure, QR-enabled testimonials/certificates for school graduates.",
+        "The platform is scalable to accommodate multiple states and educational institutions.",
+        "The testimonial includes a QR code linked to the official result, enabling instant verification by third parties.",
+        "Emphasis on speed and accuracy: from submission to download the process is described as “secure, fast & hassle-free",
+        "There's a “verify testimonial” function, likely so employers or institutions can validate the document.",
+      ],
+      
+      link: "https://testify.ng/",
+      tags: ["Education", "testimoal", "fraud prevention"]
+    },
+      {
+      title: "Cindy Ai",
+      description: "Cindy AI appears to be an AI-powered voice/assistant app that aims to provide a conversational partner who “understands, remembers, and evolves with you. it not just a one-off chat bot, but one that builds memory of your preferences and habits to personalise its responses",
+      features: [
+        "User Authentication & Role Management.",
+        "It encourages a more natural interaction between human and computer, possibly for tasks, reminders, conversational companionship, or voice-driven assistance",
+        "Memory & Personalisation: The assistant is designed to remember things you tell it, adapt over time, and offer personalised interactions.",
+        "Voice Assistant Focus: It emphasises voice interaction (rather than only typed chat), suggesting you can speak to it and it will respond in kind.",
+        "Evolving Experience: Over time the app “evolves” with you meaning the more you use it, the better/safer/more tailored it becomes.",
+        "Account-based Access: You need to create or sign into an account (email + password) to use the service.",
+        "Multifunctional Use: It likely covers tasks beyond basic chat—like reminders, scheduling, personal productivity, or just a conversational companion."
+        
+      ],
+      
+      link: "https://getcindy.com/",
+      tags: ["Education", "testimoal", "AI Asssistant"]
+    },
+     {
+      title: "Abia School Management Portal",
+      description: "An online platform for managing school activities. Features include:",
+      features: [
+        "Result checking portal",
+        "Administrative dashboard"
+      ],
+      link: "https://abiaunifyportal.com.ng/",
+      tags: ["Education", "Government", "Assessment"]
+    },
+     {
+      title: "LagosLiga Analysis Platform",
+      description: "The LagosLiga Analysis Platform, hosted at lagosliga.madeinafricasport.com, is a dedicated analytics site for the Lagos Liga competition. It offers comprehensive analysis of all games, utilizing 48 distinct data points to provide real-time insights and visualizations. This platform enhances the experience for fans, coaches, and analysts by delivering in-depth statistical breakdowns and dynamic visual representations of match events. The Lagos Liga is a 7-a-side football tournament that commenced on December 6, 2024, at Campos Stadium, featuring 16 teams. The inaugural tournament concluded with Primal Sporting FC clinching the N50 million grand prize after a dramatic final against Applebee FC at the Mobolaji Johnson Arena. The match ended 1-1 after extra time, with Primal Sporting FC securing victory through a 9-8 penalty shootout. The LagosLiga Analysis Platform plays a crucial role in documenting and analyzing such thrilling matches, offering stakeholders valuable data-driven insights into team performances and match dynamics.",
+      features: [
+        "Real-time match insights",
+        "Dynamic visual representations",
+        "Comprehensive statistical breakdowns",
+        "In-depth performance analysis",
+        "Team and player statistics"
+      ],
+      link: "https://lagosliga.madeinafricasport.com/",
+      tags: ["Sports", "Analytics", "Football"]
+    },
+     {
+      title: "Platform EduPortal",
+      description: "Platform EduPortal is a comprehensive SaaS school management solution designed to streamline administrative tasks and enhance the educational experience for students, teachers, and administrators. It offers a range of features tailored to meet the diverse needs of educational institutions.",
+      features: [
+        "School Website: Provides schools with a customizable website to establish an online presence",
+        "School Management Portal: Facilitates efficient management of student records, attendance, and academic performance.",
+        "Computer-Based Testing (CBT): Enables the creation and administration of online quizzes and exams, promoting interactive assessments.",
+        "School Inventory Management: Assists in tracking and managing school resources and financial transactions.",
+        "E-Library: Provides access to a vast collection of electronic books and educational materials, fostering a love for learning.",
+        "Auto Timetable Generation: Simplifies the creation of class schedules with an intuitive timetable generator",
+        "Results to SMS: Allows schools to send students' results directly to parents via SMS, ensuring timely communication"
+      ],
+      link: "https://platformeduportal.com/",
+      tags: ["Education", "SaaS", "Management"]
+    },
+     {
+      title: "EDC Anambra",
+      description: "The Examinations Development Centre (EDC) of Anambra State is a pivotal department within the state's Ministry of Education, responsible for the design, development, and implementation of assessment and examination systems for students across various educational levels. The EDC ensures fair, accurate, and standardized evaluations of student learning outcomes, contributing significantly to the quality of education in the state.",
+      features: [
+        "Online examination registration",
+        "Result checking portal",
+        "Assessment management",
+        "Student records database",
+        "Administrative dashboard"
+      ],
+      link: "https://edcanambra.com/",
+      tags: ["Education", "Government", "Assessment"]
+    },
+   
+    {
+      title: "EDC Abia State",
+      description: "The Examinations Development Commission (EDC) of Abia State, the EDC is responsible for designing, developing, and implementing assessment and examination systems for students across various educational levels. Its primary objective is to ensure fair, accurate, and standardized evaluations of student learning outcomes, thereby contributing significantly to the quality of education in the state. In a significant technological advancement, the EDC has established an online platform that facilitates seamless registration and result checking for various examinations. This initiative aims to streamline examination processes and enhance accessibility for candidates and educational institutions.",
+      features: [
+        "Examination registration",
+        "Result verification",
+        "Certificate management",
+        "Administrative tools"
+      ],
+      link: "https://edcabiastate.com/",
+      tags: ["Education", "Government", "Assessment"]
+    },
   ];
 
   return (
