@@ -14,7 +14,7 @@ function Footer() {
 
           <div className="mb-8 md:mb-0 text-center md:text-left">
             <a href="#home" className="text-2xl font-display font-bold text-white tracking-widest inline-block mb-4">
-              TEMI<span className="text-primary-light">.</span>
+              TEMITOPE<span className="text-primary-light">.</span>
             </a>
             <p className="text-gray-500 text-sm max-w-sm mx-auto md:mx-0">
               Engineering elegant solutions to complex problems, beautifully crafted with modern web technologies.

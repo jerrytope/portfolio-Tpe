@@ -27,7 +27,7 @@ const Navbar = () => {
         >
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <a href="#home" className="text-2xl font-display font-bold text-white tracking-widest">
-                    TEMI<span className="text-primary-light">.</span>
+                    TEMITOPE<span className="text-primary-light">.</span>
                 </a>
 
                 <div className="hidden md:flex space-x-8">
