@@ -1,102 +1,141 @@
-import { Terminal, Database, DatabaseZap, BrainCircuit, Brain, BarChart3  } from 'lucide-react';
+import { Terminal, Database, DatabaseZap, BrainCircuit, Brain, BarChart3 } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 function SkillBar({ name, percentage }) {
   return (
-    <li className="flex items-center justify-between">
-      <span className="w-16 text-sm text-gray-600">{name}</span>
-      <div className="flex-1 mx-4">
-        <div className="w-full bg-gray-200 rounded-full h-2.5">
-          <div className="bg-indigo-600 h-2.5 rounded-full" style={{width: `${percentage}%`}}></div>
-        </div>
+    <div className="mb-4 last:mb-0">
+      <div className="flex justify-between items-end mb-1">
+        <span className="text-sm font-medium text-gray-300 tracking-wide">{name}</span>
       </div>
-      {/* <span className="w-6 text-sm text-gray-600 text-right">{percentage}%</span> */}
-    </li>
+      <div className="w-full bg-surface-hover rounded-full h-1.5 overflow-hidden">
+        <motion.div
+          initial={{ width: 0 }}
+          whileInView={{ width: `${percentage}%` }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="bg-gradient-to-r from-primary to-secondary h-1.5 rounded-full"
+        />
+      </div>
+    </div>
   );
 }
 
 function SkillSet() {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+  };
+
+  const skillCategories = [
+    {
+      title: "Backend Development",
+      icon: <Terminal className="w-6 h-6 text-primary-light" />,
+      skills: [
+        { name: "Python", percentage: 95 },
+        { name: "Django", percentage: 95 },
+        { name: "FASTApi", percentage: 90 },
+        { name: "Streamlit", percentage: 85 }
+      ]
+    },
+    {
+      title: "Databases & Tools",
+      icon: <Database className="w-6 h-6 text-primary-light" />,
+      skills: [
+        { name: "PostgreSQL", percentage: 90 },
+        { name: "MySQL", percentage: 85 },
+        { name: "GraphSQL", percentage: 80 },
+        { name: "Docker", percentage: 80 }
+      ]
+    },
+    {
+      title: "Deep Learning",
+      icon: <BrainCircuit className="w-6 h-6 text-primary-light" />,
+      skills: [
+        { name: "PyTorch", percentage: 85 },
+        { name: "TensorFlow", percentage: 80 },
+        { name: "Keras", percentage: 80 }
+      ]
+    },
+    {
+      title: "Frontend Development",
+      icon: <DatabaseZap className="w-6 h-6 text-primary-light" />,
+      skills: [
+        { name: "React JS", percentage: 90 },
+        { name: "Next JS", percentage: 85 },
+        { name: "JavaScript", percentage: 90 }
+      ]
+    },
+    {
+      title: "Generative AI",
+      icon: <Brain className="w-6 h-6 text-primary-light" />,
+      skills: [
+        { name: "LangChain", percentage: 85 },
+        { name: "LLMs", percentage: 85 },
+        { name: "Prompt Engineering", percentage: 90 }
+      ]
+    },
+    {
+      title: "Microsoft BI",
+      icon: <BarChart3 className="w-6 h-6 text-primary-light" />,
+      skills: [
+        { name: "PowerBI", percentage: 90 },
+        { name: "SSIS", percentage: 80 },
+        { name: "SSAS", percentage: 80 }
+      ]
+    }
+  ];
+
   return (
-    <section className="py-4 m-4 rounded-3xl bg-gray-50 border shadow-xl">
-      <div className="container bg-gray- rounded-3xl shadow-lg mx-auto">
-        <h2 className="text-3xl font-bold mb-4 text-center">Technical Skills</h2>
-        <div className="max-w-4xl pb-8 mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          <div className="bg-white p-6 rounded-lg border-transparent shadow-xl">
-            <h3 className="font-semibold mb-4 flex items-center">
-              <Terminal className="w-5 h-5 mr-2 text-indigo-600" />
-              Backend Development
-            </h3>
-            <ul className="space-y-2">
-              <SkillBar name="Python" percentage={100} />
-              <SkillBar name="Django" percentage={100} />
-              <SkillBar name="FASTApi" percentage={100} />
-              <SkillBar name="Streamlit" percentage={100} />
-            </ul>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg border-transparent shadow-xl">
-            <h3 className="font-semibold mb-4 flex items-center">
-              <Database className="w-5 h-5 mr-2 text-indigo-600" />
-              Databases & Tools
-            </h3>
-            <ul className="space-y-2">
-              <SkillBar name="MySQL" percentage={100} />
-              <SkillBar name="PostgreSQL" percentage={100} />
-              <SkillBar name="SQL" percentage={100} />
-              <SkillBar name="Docker" percentage={100} />
-            </ul>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg border-transparent shadow-xl">
-            <h3 className="font-semibold mb-4 flex items-center">
-              <BrainCircuit className="w-5 h-5 mr-2 text-indigo-600" />
-              Deep Learning
-            </h3>
-            <ul className="space-y-2">
-              <SkillBar name="PyTorch" percentage={100} />
-              <SkillBar name="TensorFlow" percentage={100} />
-              <SkillBar name="Keras" percentage={100} />
-            </ul>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg border-transparent shadow-xl">
-            <h3 className="font-semibold mb-4 flex items-center">
-              <DatabaseZap  className="w-5 h-5 mr-2 text-indigo-600" />
-              Frontend Development
-            </h3>
-            <ul className="space-y-2">
-              <SkillBar name="React" percentage={100} />
-              <SkillBar name="Next JS" percentage={100} />
-              <SkillBar name="Javascript" percentage={100} />
-            </ul>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg border-transparent shadow-xl">
-            <h3 className="font-semibold mb-4 flex items-center">
-              <Brain className="w-5 h-5 mr-2 text-indigo-600" />
-              LLM
-            </h3>
-            <ul className="space-y-2">
-              <SkillBar name="LangChain" percentage={100} />
-              <SkillBar name="NLTK" percentage={100} />
-              <SkillBar name="smallAI" percentage={100} />
-            </ul>
-          </div>
-
-          <div className="bg-white p-6 rounded-lg border-transparent shadow-xl">
-            <h3 className="font-semibold mb-4 flex items-center">
-              <BarChart3 className="w-5 h-5 mr-2 text-indigo-600" />
-              Microsoft BI Stack:
-            </h3>
-            <ul className="space-y-2">
-              <SkillBar name="PowerBI" percentage={100} />
-              <SkillBar name="SSRS" percentage={100} />
-              <SkillBar name="SSIS" percentage={100} />
-              <SkillBar name="SSAS" percentage={100} />
-            </ul>
-          </div>
-
+    <section id="skills" className="py-32 relative">
+      <div className="container mx-auto px-6 relative z-10">
+        <div className="text-center mb-16">
+          <motion.h2
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-display font-bold mb-6"
+          >
+            Technical <span className="gradient-text">Arsenal</span>
+          </motion.h2>
+          <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
         </div>
+
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-100px" }}
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          {skillCategories.map((category, index) => (
+            <motion.div
+              key={index}
+              variants={itemVariants}
+              whileHover={{ y: -5 }}
+              className="glass-panel p-8 rounded-2xl transition-all duration-300"
+            >
+              <div className="flex items-center mb-8">
+                <div className="p-3 bg-white/5 rounded-xl mr-4">
+                  {category.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-white tracking-wide">{category.title}</h3>
+              </div>
+              <div className="space-y-6">
+                {category.skills.map((skill, idx) => (
+                  <SkillBar key={idx} name={skill.name} percentage={skill.percentage} />
+                ))}
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </section>
   );
